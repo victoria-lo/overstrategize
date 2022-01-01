@@ -34,13 +34,13 @@ Visit the Overstrategize [website](https://overstrategize.herokuapp.com/) to use
 ### Using the Online Tool
 1. Enter the information in the **Main** tab.
 
-<img src="./src/img/web_main.png"/>
+<img src="./src/img/web_main.PNG"/>
 
 2. Click the "Recommend" button to calculate. The result will be displayed in the **Result** tab.
 
-<img src="./src/img/web_result.png"/>
+<img src="./src/img/web_result.PNG"/>
 
-<img src="./src/img/web_result2.png"/>
+<img src="./src/img/web_result2.PNG"/>
 
 Here's how to interpret the result:
 - If your team's total points is higher than the enemy team's, your team has the advantage and vice versa.
@@ -53,7 +53,7 @@ Here's how to interpret the result:
 
 3. After viewing the results, you can navigate to the **Recommendation** tab to see the recommended heroes.
 
-<img src="./src/img/web_recommend.png"/>
+<img src="./src/img/web_recommend.PNG"/>
 
 Here's how to interpret the result:
 - The **Recommendation** tab shows the recommended heroes for your team by the roles: Tank, Damage and Support.
@@ -84,7 +84,7 @@ PyOpenGL-accelerate @ file:///C:/Users/victo/Downloads/Overstrategize-master/whe
 5. Run `python main.py` to start the app.
 6. Run the game and press Tab for 3 seconds and the following analysis result will show on screen.
 
-<img src="./src/img/sample.png"/>
+<img src="./src/img/sample.PNG"/>
 
 How to interpret the result:
 - The left column shows the worst heroes for your team based on the roles (top-down): Support, Damage and Tank.
