@@ -34,13 +34,13 @@ Visit the Overstrategize [website](https://overstrategize.herokuapp.com/) to use
 ### Using the Online Tool
 1. Enter the information in the **Main** tab.
 
-![main](./src/img/web_main.png)
+<img src="./src/img/web_main.png"/>
 
 2. Click the "Recommend" button to calculate. The result will be displayed in the **Result** tab.
 
-![result](./src/img/web_result.png)
+<img src="./src/img/web_result.png"/>
 
-![result2](./src/img/web_result2.png)
+<img src="./src/img/web_result2.png"/>
 
 Here's how to interpret the result:
 - If your team's total points is higher than the enemy team's, your team has the advantage and vice versa.
@@ -53,7 +53,7 @@ Here's how to interpret the result:
 
 3. After viewing the results, you can navigate to the **Recommendation** tab to see the recommended heroes.
 
-![recommend](./src/img/web_recommend.png)
+<img src="./src/img/web_recommend.png"/>
 
 Here's how to interpret the result:
 - The **Recommendation** tab shows the recommended heroes for your team by the roles: Tank, Damage and Support.
@@ -61,8 +61,35 @@ Here's how to interpret the result:
 
 
 ### Using the Desktop App
-1. Download the app from the 
+Unlike the online tool where you have to manually enter the team and map information, the desktop app will automatically detect the team composition and map information in real-time when you play the game.
 
+Note that depending on your machine's specs, the frame rate may drop.
+
+> **Important:** When running the game, ensure the window is set to Borderless Window instead of Fullscreen.
+
+1. Download the app from the Overstrategize [website](https://overstrategize.herokuapp.com/).
+2. Unzip the folder.
+3. Navigate to the `requirements.txt` file and replace lines 34 and 35 with your own directory where you downloaded the folder.
+```
+PyOpenGL @ file:///YOUR_DIRECTORY/Overstrategize-master/wheels/PyOpenGL-3.1.5-cp38-cp38-win_amd64.whl
+PyOpenGL-accelerate @ file:///YOUR_DIRECTORY/Overstrategize-master/wheels/PyOpenGL_accelerate-3.1.5-cp38-cp38-win_amd64.whl
+```
+
+For example, if the folder is located at `C:/Users/victo/Downloads/` then the lines should be:
+```
+PyOpenGL @ file:///C:/Users/victo/Downloads/Overstrategize-master/wheels/PyOpenGL-3.1.5-cp38-cp38-win_amd64.whl
+PyOpenGL-accelerate @ file:///C:/Users/victo/Downloads/Overstrategize-master/wheels/PyOpenGL_accelerate-3.1.5-cp38-cp38-win_amd64.whl
+```
+4. Run `pip install -r requirements.txt` to install the dependencies.
+5. Run `python main.py` to start the app.
+6. Run the game and press Tab for 3 seconds and the following analysis result will show on screen.
+
+<img src="./src/img/sample.png"/>
+
+How to interpret the result:
+- The left column shows the worst heroes for your team based on the roles (top-down): Support, Damage and Tank.
+- The left column shows the best heroes for your team based on the roles (top-down): Support, Damage and Tank.
+- The numbers next to each hero shows the total synergy points of the hero. Swap to a hero that has a higher point for optimal team strategy.
 
 ------------
 
