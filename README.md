@@ -14,7 +14,7 @@ Visit the Overstrategize website to download the tool and learn more.
 
 ## Technologies Used
 ![google](https://img.shields.io/badge/-Google%20AutoML%20Object%20Detection-303030?style=for-the-badge&logo=google%20cloud&logoColor=4285F4)
-![Python](https://img.shields.io/badge/-Python%20Flask-303030?style=for-the-badge&logo=python&logoColor=ffde24)
+![Python](https://img.shields.io/badge/-Python-303030?style=for-the-badge&logo=python&logoColor=ffde24)
 ![React](https://img.shields.io/badge/-React-303030?style=for-the-badge&logo=react&logoColor=61daf8)
 ![Chakra UI](https://img.shields.io/badge/-Chakra%20UI-303030?style=for-the-badge&logo=chakra%20ui&logoColor=319795)
 
