@@ -87,8 +87,10 @@ function Web() {
     window.scrollTo(0, 0);
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
-        console.log("ENTER down")
         calculatePoints();
+      }
+      if (e.key === 'Backspace') {
+        reset();
       }
     });
     setAllImages(await getAllImages())
@@ -99,8 +101,6 @@ function Web() {
     console.log("enemy",totalEnemyPoints)
     sortRecommendations();
   }, [totalAllyPoints]);
-
-
 
   //update points and map role fields when map is changed
   useEffect(() => {
@@ -176,6 +176,20 @@ function Web() {
           "Support": supports
         }
       )
+  }
+
+  //reset everything
+  const reset = () => {
+    setTier("None");
+    setMap("None");
+    setPoint("None");
+    setMapRole("None");
+    setMyTeam(["None","None","None","None","None","None"]);
+    setEnemyTeam(["None","None","None","None","None","None"]);
+    setAllyRecords({"ATP":[],"AMR":[],"AHS":[],"AHC":[]});
+    setEnemyRecords({"ATP":[],"AMR":[],"AHS":[],"AHC":[]});
+    setAllyTotal(0);
+    setEnemyTotal(0);
   }
 
   //calculate points
@@ -417,8 +431,7 @@ function Web() {
                     <Flex mt={8} maxW="500px" wrap="wrap" justify="space-between">
                       <Flex align="center">
                           <Button onClick={()=>{
-                            setAllyTotal(0);
-                            setEnemyTotal(0);
+                            reset();
                           }} className="footer-btn" mx={1}>Backspace</Button>
                           <Text className="footer-text"  ml={1}>Reset</Text>
                       </Flex>

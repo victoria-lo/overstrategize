@@ -27,8 +27,8 @@ function Use({forwardedRef,disclaimerRef}) {
     }
   },[component])
 
-  const redirectToInstall = () =>{
-    alert("Redirect to Installation page!")
+  const download = () =>{
+    window.open("https://storage.googleapis.com/overstrategize-viclo/Overstrategize-master.zip");
   }
 
   return (
@@ -57,16 +57,16 @@ function Use({forwardedRef,disclaimerRef}) {
                 </Button></Link>
               </Box>
               <Box _hover={{border:"2px", borderColor: "white", transform:"scale(1.2)"}} transition="transform 0.3s" mt={4} mx={3} w="200px" h="120px"bgColor="#E4E2E8" border="1.2px solid #404863">
-                <Button onClick={redirectToInstall} className="select" w="100%" h="100%" bgColor="#E4E2E8" color="#404863">
+                <Button onClick={download} className="select" w="100%" h="100%" bgColor="#E4E2E8" color="#404863">
                     <Icon w="60%" h="60%" as={BiDownload}/>
                     <Text fontSize="md" mt={3}>DESKTOP</Text>
                 </Button>
               </Box>
               <Box _hover={{border:"2px", borderColor: "white", transform:"scale(1.2)"}} transition="transform 0.3s" mt={4} mx={3} w="200px" h="120px"bgColor="#E4E2E8" border="1.2px solid #404863">
-              <Link to="/docs"><Button className="select" w="100%" h="100%" bgColor="#E4E2E8" color="#404863">
+              <Button onClick={()=>{window.location.href="https://github.com/victoria-lo/overstrategize"}} className="select" w="100%" h="100%" bgColor="#E4E2E8" color="#404863">
                     <Icon w="60%" h="60%" as={BiFile}/>
                     <Text fontSize="md" mt={3}>DOCUMENTATION</Text>
-                </Button></Link>
+                </Button>
               </Box>
           </Flex>
       </Flex>
