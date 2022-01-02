@@ -106,7 +106,7 @@ How to interpret the GUI displayed on game screen:
 
 ## Challenges We Ran Into
 
-We have attempted to build this project back in May-June 2021. We have tirelessly included over 1000 different data sets from various sources to build the object detection model for the app. But after that, we encountered a lot of difficulties building the desktop app to run with the game and provide recommendations in real-time. So our dream to complete this app was put on hold until this hackathon started.
+We have attempted to build this project back in May-June 2021. We have tirelessly included over 2000 different data sets from various sources to build the object detection model for the app. But after that, we encountered a lot of difficulties building the desktop app to run with the game and provide recommendations in real-time. So our dream to complete this app was put on hold until this hackathon started.
 
 Since this is a new year hackathon, we decided to return to this forgotten project and gave it another chance. Completing this tool at the start of the new year would help us fulfill our new year's resolution to get better at the game. At the same time, completing this project would signify that we have overcome the challenges we faced in the past, and grew as hackers.
 
