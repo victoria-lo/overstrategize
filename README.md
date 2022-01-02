@@ -118,6 +118,7 @@ Since this is a new year hackathon, we decided to return to this forgotten proje
 
 #### The challenges we had to overcome during the hackathon were:
 - Optimizing the desktop app because it was very laggy when it was run with the game.
+- It is holiday season right now so the game's servers are overloaded and down, causing a lot of frustration and hiccups when testing.
 - Finding a way to make the app easy to use while playing the game.
 - Using a lot of Python dependencies causes a few issues and errors during testing.
 - The custom model is sometimes not able to detect the heroes correctly in the game. We quickly had to re-train with more data.
